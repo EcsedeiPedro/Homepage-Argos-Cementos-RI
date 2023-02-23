@@ -1,0 +1,131 @@
+footer {
+  background-color: $footerColor;
+  font-family: "Trade Gothic";
+  padding-bottom: 26px;
+  padding-top: 33px;
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 876px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .channels {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        color: $secondaryColor;
+        font-family: "Trade Gothic";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 16px;
+      }
+
+      .phone {
+        width: 164px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        color: #67823a;
+        padding-bottom: 8px;
+
+        span {
+          margin-left: 15px;
+        }
+      }
+
+      .email {
+        width: 164px;
+        display: flex;
+        align-items: center;
+        color: #67823a;
+        padding-bottom: 24px;
+
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+
+    .certification {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 876px) {
+        justify-content: unset;
+        align-items: center;
+        text-align: center;
+        
+      }
+
+      img {
+        width: 164px;
+      }
+
+      p {
+        width: 286px;
+        padding-top: 31px;
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //   align-items: center;
+
+      @media (min-width: 876px) {
+        justify-content: unset;
+      }
+
+      .map-site {
+        display: none;
+        transition: .7s;
+        
+        &:hover {
+          opacity: .7;
+        }
+
+        @media (min-width: 876px) {
+          display: block;
+          border: 3px solid $secondaryColor;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: {
+            top: 11px;
+            bottom: 8px;
+            left: 16px;
+            right: 16px;
+          }
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+        }
+      }
+
+      .award {
+        padding: {
+          top: 15px;
+          bottom: 21px;
+        }
+
+        width: 167px;
+      }
+
+      .powered {
+        padding-top: 35px;
+      }
+    }
+  }
+}

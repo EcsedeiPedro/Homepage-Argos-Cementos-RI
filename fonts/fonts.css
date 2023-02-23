@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Integral CF";
+  src: url(./IntegralCF/IntegralCF-Medium.otf) format("OpenType");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url(./TradeGothicLTPro/TradeGothicLTPro-Bold.otf) format("OpenType");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url(./TradeGothicLTPro/TradeGothicLTPro-Bd2.otf) format("OpenType");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url(./TradeGothicLTPro/TradeGothicLTPro-Cn18.otf) format("OpenType");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url(./TradeGothicLTPro/TradeGothicLTPro.otf) format("OpenType");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "";
+  src: url() format();
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "";
+  src: url() format();
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "";
+  src: url() format();
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "";
+  src: url() format();
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

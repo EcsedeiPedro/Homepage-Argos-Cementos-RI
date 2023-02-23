@@ -1,0 +1,468 @@
+main {
+  .banner {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../images/banner-home.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 84px 21px;
+    font-family: "Trade Gothic";
+
+    @media (min-width: 480px) {
+      background-image: url(../images/banner-home-desktop.png);
+
+      .banner-text {
+        width: 405px;
+      }
+    }
+
+    .container {
+      .banner-text {
+        width: 281px;
+
+        h1 {
+          color: white;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 28px;
+
+          span {
+            color: $primaryColor;
+          }
+        }
+
+        p {
+          margin-top: 16px;
+          color: white;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+
+  .cards {
+    font-family: "Trade Gothic";
+    margin-top: -75px;
+    width: 100%;
+
+    .container {
+      padding: {
+        left: 15px;
+        right: 15px;
+      }
+
+      @media (min-width: 1200px) {
+        display: flex;
+        padding: 0;
+      }
+    }
+
+    .card {
+      width: 100%;
+      color: $secondaryColor;
+      background-color: $primaryColor;
+      padding: {
+        top: 23px;
+        bottom: 23px;
+        left: 21px;
+        right: 21px;
+      }
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 11px;
+      }
+
+      .value {
+        font-family: "Integral CF";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 28px;
+        margin-bottom: 39px;
+        display: flex;
+        justify-content: space-between;
+
+        .percent {
+          font-family: "Trade Gothic";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+
+        + p {
+          margin-top: 11px;
+        }
+      }
+    }
+
+    .card2 {
+      background-color: #b7bf0e;
+    }
+
+    .quick-access {
+      width: 100%;
+      margin-top: 21px;
+
+      @media (min-width: 560px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 21px;
+      }
+
+      @media (min-width: 1200px) {
+        margin: 0;
+      }
+
+      .box {
+        cursor: pointer;
+
+        @media (min-width: 560px) {
+          width: 50%;
+          height: 50%;
+        }
+
+        background-color: $secondaryColor;
+        padding: {
+          top: 23px;
+          bottom: 23px;
+          left: 21px;
+          right: 21px;
+        }
+        display: flex;
+        align-items: center;
+
+        a {
+          color: white;
+          margin-left: 21px;
+          transition: 0.4s;
+
+          &:hover {
+            opacity: 0.4;
+          }
+        }
+      }
+
+      .bg-light {
+        background-color: $bgLight;
+      }
+    }
+  }
+
+  .news {
+    font-family: "Trade Gothic";
+    color: $secondaryColor;
+    width: 100%;
+    padding-top: 56px;
+
+    .container {
+      overflow-x: hidden;
+
+      @media (min-width: 1200px) {
+        padding: 0;
+      }
+
+      h2 {
+        margin-top: 50px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        padding-left: 15px;
+
+        @media (min-width: 1200px) {
+          font-size: 40px;
+          padding-left: 0;
+        }
+      }
+
+      .news-cards {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        padding-bottom: 90px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media (min-width: 1200px) {
+          justify-content: space-between;
+          overflow: initial;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .news-card {
+          position: relative;
+          min-width: 236.85px;
+          max-width: 237px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+          transition: 0.5s;
+
+          @media (min-width: 1200px) {
+            &:hover {
+              transform: translateY(-30px);
+            }
+          }
+
+          .news-bg {
+            width: 100%;
+            height: 138.35px;
+          }
+
+          .green-bar {
+            width: 100%;
+            height: 4.43px;
+            background-color: $primaryColor;
+          }
+
+          .resume {
+            padding: {
+              left: 16px;
+              right: 16px;
+              top: 18px;
+              bottom: 55px;
+            }
+
+            span {
+              color: $primaryColor;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 100%;
+              cursor: pointer;
+            }
+
+            p {
+              margin-top: 15px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14px;
+              text-align: center;
+            }
+          }
+
+          .see-more {
+            position: absolute;
+            top: 288px;
+          }
+
+          + .news-card {
+            margin-left: 30px;
+
+            @media (min-width: 1200px) {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .informations {
+    display: flex;
+    flex-direction: column;
+    font-family: "Trade Gothic";
+
+    h3 {
+      font-family: "Integral CF";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 28px;
+      letter-spacing: 0.03em;
+
+      @media (min-width: 1200px) {
+        font-size: 37px;
+        line-height: 44px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+
+    .box-blue {
+      width: 100%;
+      background: #c4d6a4;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 48px;
+      padding-bottom: 60px;
+
+      @media (min-width: 1024px) {
+        width: 50%;
+      }
+
+      h3 {
+        color: $secondaryColor;
+      }
+
+      hr {
+        margin-left: 0;
+        background-color: white;
+      }
+
+      .results {
+        .file {
+          display: flex;
+          align-items: center;
+
+          + .file {
+            margin-top: 31px;
+          }
+
+          a {
+            margin-left: 28px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16.1667px;
+            line-height: 19px;
+            transition: 0.5s;
+
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .see-more {
+        margin-top: 50px;
+        margin-left: 0;
+      }
+    }
+
+    .box-green {
+      width: 100%;
+      background: #6cc24a;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 48px;
+      padding-bottom: 60px;
+
+      @media (min-width: 1024px) {
+        width: 50%;
+        padding-left: 56px;
+        padding-right: 56px;
+      }
+
+      h3 {
+        color: white;
+      }
+
+      hr {
+        margin-left: 0;
+        background-color: $secondaryColor;
+      }
+
+      .schedule {
+        .event {
+          display: flex;
+          flex-direction: column;
+
+          @media (min-width: 1024px) {
+            flex-direction: row;
+          }
+
+          + .event {
+            margin-top: 21px;
+          }
+
+          .date-mobile {
+            color: $secondaryColor;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            padding-bottom: 14px;
+
+            @media (min-width: 1024px) {
+              display: none;
+            }
+          }
+
+          .date-desktop {
+            width: 46px;
+            height: 46px;
+            display: flex;
+            flex-direction: column;
+            display: none;
+
+            @media (min-width: 1024px) {
+              display: block;
+            }
+
+            .day-month {
+              // padding: 0;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 18px;
+            }
+
+            .year {
+              padding-top: 2px;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 23px;
+            }
+          }
+
+          .event-description {
+            margin-left: 18px;
+
+            a {
+              color: white;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16.1667px;
+              line-height: 19px;
+              padding-bottom: 10px;
+              transition: 0.5s;
+
+              &:hover {
+                color: $secondaryColor;
+              }
+            }
+
+            p {
+              color: white;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+
+      .see-more {
+        margin-top: 36px;
+      }
+    }
+  }
+}
