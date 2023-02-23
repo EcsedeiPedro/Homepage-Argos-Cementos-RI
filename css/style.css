@@ -296,8 +296,13 @@ header .container .primary-menu > li .sub-menu > li > a {
   }
 }
 header .container .primary-menu .search-desktop {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media (min-width: 1200px) {
+  header .container .primary-menu .search-desktop {
+    display: flex;
+    align-items: center;
+  }
 }
 @media (min-width: 1200px) {
   header .container .top-menu {
@@ -362,6 +367,11 @@ header .container .menu-toggle span {
   justify-content: center;
   transition: 0.5s;
   z-index: 999;
+}
+@media (max-width: 1199px) {
+  .search-pop-up {
+    display: none;
+  }
 }
 .search-pop-up label {
   display: flex;

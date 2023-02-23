@@ -86,7 +86,7 @@ header {
       }
 
       .parent {
-        transition: .7s;
+        transition: 0.7s;
         &:hover {
           color: white;
         }
@@ -205,8 +205,12 @@ header {
       }
 
       .search-desktop {
-        display: flex;
-        align-items: center;
+        display: none;
+        
+        @media (min-width: 1200px) {
+          display: flex;
+          align-items: center;
+        }
       }
     }
 
@@ -283,6 +287,10 @@ header {
   justify-content: center;
   transition: 0.5s;
   z-index: 999;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 
   label {
     display: flex;
